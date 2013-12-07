@@ -17,6 +17,10 @@ func (lhs Vec3) Sub(rhs Vec3) Vec3 {
 	return Vec3{lhs.X-rhs.X, lhs.Y-rhs.Y, lhs.Z-rhs.Z}
 }
 
+func (lhs Vec3) Scale(rhs float64) Vec3 {
+	return Vec3{lhs.X*rhs, lhs.Y*rhs, lhs.Z*rhs}
+}
+
 func (v Vec3) LengthSquare() float64 {
 	return v.X*v.X + v.Y*v.Y + v.Z*v.Z
 }
