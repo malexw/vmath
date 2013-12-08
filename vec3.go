@@ -21,6 +21,10 @@ func (lhs Vec3) Scale(rhs float64) Vec3 {
 	return Vec3{lhs.X*rhs, lhs.Y*rhs, lhs.Z*rhs}
 }
 
+func (lhs Vec3) Dot(rhs Vec3) float64 {
+	return lhs.X*rhs.X + lhs.Y*rhs.Y + lhs.Z*rhs.Z
+}
+
 func (v Vec3) LengthSquare() float64 {
 	return v.X*v.X + v.Y*v.Y + v.Z*v.Z
 }
