@@ -25,6 +25,10 @@ func (lhs Vec3) Dot(rhs Vec3) float64 {
 	return lhs.X*rhs.X + lhs.Y*rhs.Y + lhs.Z*rhs.Z
 }
 
+func (lhs Vec3) Cross(rhs Vec3) Vec3 {
+	return Vec3{lhs.Y*rhs.Z - lhs.Z*rhs.Y, lhs.Z*rhs.X - lhs.X*rhs.Z, lhs.X*rhs.Y - lhs.Y*rhs.X}
+}
+
 func (v Vec3) LengthSquare() float64 {
 	return v.X*v.X + v.Y*v.Y + v.Z*v.Z
 }
