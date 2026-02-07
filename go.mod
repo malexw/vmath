@@ -1,3 +1,3 @@
-module github.com/malexw/vmath
+module blinkenlights.ca/vmath
 
 go 1.25.6
